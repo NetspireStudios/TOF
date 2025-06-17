@@ -6,7 +6,7 @@ import DonateButton from '@/components/DonateButton'
 
 export default function Home() {
   return (
-    <main className="bg-black text-white">
+    <main className="bg-white text-slate-800">
       <Navigation />
       <Hero />
       <StorySection />

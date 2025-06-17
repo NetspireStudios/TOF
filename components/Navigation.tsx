@@ -54,8 +54,8 @@ const Navigation = () => {
             onClick={() => handleNavClick('hero')}
           >
             <Heart className="h-8 w-8 text-primary-500 fill-current" />
-            <span className="text-xl font-light text-white glow-text">
-              Hope Foundation
+            <span className="text-xl font-light text-slate-800 glow-text">
+              The Omar Foundation
             </span>
           </motion.div>
 
@@ -69,7 +69,7 @@ const Navigation = () => {
                   whileTap: { y: 0 }
                 })}
                 onClick={() => handleNavClick(item.href)}
-                className="text-gray-300 hover:text-primary-400 transition-colors duration-200 font-light"
+                className="text-slate-600 hover:text-primary-500 transition-colors duration-200 font-light"
               >
                 {item.name}
               </motion.button>
@@ -83,7 +83,7 @@ const Navigation = () => {
                 whileTap: { scale: 0.95 }
               })}
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-300 hover:text-primary-400 transition-colors"
+              className="text-slate-600 hover:text-primary-500 transition-colors"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </motion.button>
@@ -101,7 +101,7 @@ const Navigation = () => {
               exit: { opacity: 0, height: 0 },
               transition: { duration: 0.3 }
             })}
-            className="md:hidden glass backdrop-blur-md border-t border-gray-800"
+            className="md:hidden glass backdrop-blur-md border-t border-slate-200"
           >
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navItems.map((item, index) => (
@@ -113,7 +113,7 @@ const Navigation = () => {
                     transition: { delay: index * 0.1 }
                   })}
                   onClick={() => handleNavClick(item.href)}
-                  className="block w-full text-left px-3 py-2 text-gray-300 hover:text-primary-400 transition-colors font-light"
+                  className="block w-full text-left px-3 py-2 text-slate-600 hover:text-primary-500 transition-colors font-light"
                 >
                   {item.name}
                 </motion.button>

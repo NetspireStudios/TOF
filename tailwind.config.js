@@ -9,26 +9,26 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          50: '#f0f4ff',
-          100: '#e0e9ff',
-          200: '#c7d7fe',
-          300: '#a5bbfc',
-          400: '#8295f8',
-          500: '#536DE2',
-          600: '#4c5ed4',
-          700: '#434bb8',
-          800: '#383e94',
-          900: '#323775',
+          50: '#f0f9ff',
+          100: '#e0f2fe',
+          200: '#bae6fd',
+          300: '#7dd3fc',
+          400: '#38bdf8',
+          500: '#0ea5e9',
+          600: '#0284c7',
+          700: '#0369a1',
+          800: '#075985',
+          900: '#0c4a6e',
         },
-        background: '#000000',
-        foreground: '#ffffff',
+        background: '#ffffff',
+        foreground: '#1e293b',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'grid-pattern': `
-          linear-gradient(rgba(83, 109, 226, 0.03) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(83, 109, 226, 0.03) 1px, transparent 1px)
+          linear-gradient(rgba(14, 165, 233, 0.08) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(14, 165, 233, 0.08) 1px, transparent 1px)
         `,
       },
       backgroundSize: {
@@ -54,8 +54,8 @@ module.exports = {
           '50%': { transform: 'translateY(-20px)' },
         },
         glow: {
-          '0%': { textShadow: '0 0 5px rgba(83, 109, 226, 0.5)' },
-          '100%': { textShadow: '0 0 20px rgba(83, 109, 226, 0.8), 0 0 30px rgba(83, 109, 226, 0.6)' },
+          '0%': { textShadow: '0 0 5px rgba(14, 165, 233, 0.5)' },
+          '100%': { textShadow: '0 0 20px rgba(14, 165, 233, 0.8), 0 0 30px rgba(14, 165, 233, 0.6)' },
         },
       },
       fontFamily: {

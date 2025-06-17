@@ -41,7 +41,7 @@ const Hero = () => {
     <section
       id="hero"
       ref={heroRef}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-sky-50 to-blue-100"
     >
       {/* Animated Background */}
       <div className="absolute inset-0 grid-bg opacity-20" />
@@ -66,11 +66,11 @@ const Hero = () => {
             transition: { duration: 0.8, ease: 'easeOut' }
           })}
         >
-          <h1 className="text-5xl md:text-7xl font-thin text-white mb-6 leading-tight">
-            Changing Lives,
+          <h1 className="text-5xl md:text-7xl font-thin text-slate-800 mb-6 leading-tight">
+            Empowering Communities,
             <br />
-            <span className="glow-text bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent">
-              One Story at a Time
+            <span className="glow-text bg-gradient-to-r from-primary-500 to-primary-700 bg-clip-text text-transparent">
+              One Life at a Time
             </span>
           </h1>
         </motion.div>
@@ -81,7 +81,7 @@ const Hero = () => {
             animate: { opacity: 1, y: 0 },
             transition: { duration: 0.8, delay: 0.2, ease: 'easeOut' }
           })}
-          className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto font-light leading-relaxed"
+          className="text-xl md:text-2xl text-slate-600 mb-12 max-w-3xl mx-auto font-light leading-relaxed"
         >
           Join our mission to create lasting impact in communities worldwide. 
           Every donation, every volunteer hour, every shared story brings us closer 
@@ -104,7 +104,7 @@ const Hero = () => {
               whileTap: { scale: 0.95 }
             })}
             onClick={() => smoothScrollTo('story')}
-            className="glass border border-primary-500 text-primary-400 hover:text-white hover:bg-primary-500 transition-all duration-300 font-medium py-4 px-8 rounded-full text-lg btn-hover"
+            className="glass border border-primary-500 text-primary-600 hover:text-white hover:bg-primary-500 transition-all duration-300 font-medium py-4 px-8 rounded-full text-lg btn-hover"
           >
             Learn Our Story
           </motion.button>
@@ -129,11 +129,11 @@ const Hero = () => {
               })}
               className="glass p-6 rounded-xl text-center"
             >
-              <stat.icon className="h-8 w-8 text-primary-400 mx-auto mb-3" />
-              <div className="text-3xl font-extralight text-white glow-text mb-2">
+              <stat.icon className="h-8 w-8 text-primary-500 mx-auto mb-3" />
+              <div className="text-3xl font-extralight text-slate-800 glow-text mb-2">
                 {stat.value}
               </div>
-              <div className="text-gray-400 font-light">{stat.label}</div>
+              <div className="text-slate-600 font-light">{stat.label}</div>
             </motion.div>
           ))}
         </motion.div>
@@ -154,7 +154,7 @@ const Hero = () => {
             transition: { duration: 2, repeat: Infinity, ease: 'easeInOut' }
           })}
           onClick={() => smoothScrollTo('story')}
-          className="text-gray-400 hover:text-primary-400 transition-colors"
+          className="text-slate-500 hover:text-primary-500 transition-colors"
         >
           <ArrowDown className="h-6 w-6" />
         </motion.button>

@@ -3,19 +3,19 @@ import React from 'react'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Hope Foundation - Changing Lives Together',
+  title: 'The Omar Foundation - Empowering Communities Together',
   description: 'Join us in our mission to create positive change in communities around the world. Every donation makes a difference.',
-  keywords: 'nonprofit, charity, donation, community, help, volunteer',
-  authors: [{ name: 'Hope Foundation' }],
+  keywords: 'nonprofit, charity, donation, community, help, volunteer, Omar Foundation',
+  authors: [{ name: 'The Omar Foundation' }],
   openGraph: {
-    title: 'Hope Foundation - Changing Lives Together',
+    title: 'The Omar Foundation - Empowering Communities Together',
     description: 'Join us in our mission to create positive change in communities around the world.',
     type: 'website',
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Hope Foundation - Changing Lives Together',
+    title: 'The Omar Foundation - Empowering Communities Together',
     description: 'Join us in our mission to create positive change in communities around the world.',
   },
 }
@@ -31,7 +31,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
-      <body className="bg-black text-white min-h-screen">
+      <body className="bg-white text-slate-800 min-h-screen">
         {children}
       </body>
     </html>

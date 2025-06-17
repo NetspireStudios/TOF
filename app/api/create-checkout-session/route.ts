@@ -23,8 +23,8 @@ export async function POST(request: NextRequest) {
           price_data: {
             currency,
             product_data: {
-              name: 'Donation to Hope Foundation',
-              description: 'Thank you for supporting our mission to change lives worldwide.',
+              name: 'Donation to The Omar Foundation',
+              description: 'Thank you for supporting our mission to empower communities worldwide.',
             },
             unit_amount: amount,
           },
